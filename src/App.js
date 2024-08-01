@@ -12,6 +12,7 @@ export default function App () {
   return (
     <ul>
       {content.map((item, index) => (
+        
         <li 
           key={item.title}
           onClick={() => setActive(index)}
@@ -20,6 +21,7 @@ export default function App () {
           <h3>{item.title}</h3>
           <div className='content'>{item.text}</div>
         </li>
+
       ))}
     </ul>
   )
